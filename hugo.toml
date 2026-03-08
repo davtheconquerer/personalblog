@@ -1,0 +1,39 @@
+baseURL = 'https://blog.davcore.net/'
+languageCode = 'en-us'
+title = "Dav's Personal Blog"
+theme = 'PaperMod'
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# Enable the home info box
+[params.homeInfoParams]
+    Title = "Welcome to my first ever blog 👋"
+    Content = "I write about whatever random thoughts pop into my head. My main interests are Software Development, Linux, making YouTube videos and gaming."
+
+# Set up the top navigation menu
+[[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 10
+
+[[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
+
+# Set up socials
+[[params.socialIcons]]
+    name = "youtube"
+    url = "https://youtube.com/channel/UCMmZ9MAZBYYXqd2SH5k0f4A"
+
+[[params.socialIcons]]
+    name = "bluesky"
+    url = "https://bsky.app/profile/therealdavv.bsky.social"
+
+[[params.socialIcons]]
+    name = "instagram"
+    url = "https://instagram.com/the.real.davv"
+
+copyright = "© 2026 davcore. All Rights Reserved."

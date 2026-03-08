@@ -1,0 +1,11 @@
+/* Make external links blue inside blog posts */
+.post-content a[href^="http://"],
+.post-content a[href^="https://"] {
+    color: #2a7bde; /* A nice, readable modern blue */
+}
+
+/* Ensure internal anchor links (like your Table of Contents) stay default */
+.post-content a[href^="#"],
+.post-content a[href^="/"] {
+    color: inherit;
+}
