@@ -2,6 +2,7 @@ baseURL = 'https://blog.davcore.net/'
 languageCode = 'en-us'
 title = "Dav's Personal Blog"
 theme = 'PaperMod'
+copyright = "© 2026 davcore. All Rights Reserved."
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
@@ -35,5 +36,3 @@ theme = 'PaperMod'
 [[params.socialIcons]]
     name = "instagram"
     url = "https://instagram.com/the.real.davv"
-
-copyright = "© 2026 davcore. All Rights Reserved."

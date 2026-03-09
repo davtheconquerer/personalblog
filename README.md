@@ -1,25 +1,25 @@
 # Dav's Personal Blog (blog.davcore.net)
 
-A lightweight, blazing-fast personal blog built with plain text Markdown and hosted entirely on custom hardware.
+A lightweight, blazing-fast personal blog built with plain text Markdown and hosted entirely on Raspberry Pi.
 
-## 🛠️ The Tech Stack
+## The Tech Stack
 
 * **Hardware:** Raspberry Pi (Self-hosted)
 * **Site Generator:** [Hugo](https://gohugo.io/) (v0.146.0+)
 * **Theme:** [PaperMod](https://github.com/adityatelange/hugo-PaperMod)
 * **Web Server:** Nginx (Serving local HTML/CSS on port 80)
-* **Networking:** Cloudflare Zero Trust Tunnel (Securely routes `blog.davcore.net` to the Pi without opening router ports)
+* **Networking:** Cloudflare Zero Trust Tunnel (Securely routes `blog.davcore.net` to the Pi without opening home router ports)
 
 ---
 
-## 📂 Directory Structure
+## Directory Structure
 
 * `~/personalblog/` - The main Hugo working directory containing all source files and Markdown posts.
 * `/var/www/personal-blog/` - The live Nginx directory where the compiled HTML site is served.
 
 ---
 
-## ✍️ Daily Workflow (Custom Scripts)
+## Custom Bash Scripts
 
 To make writing as frictionless as possible, this project uses two custom Bash scripts located in the home directory.
 
@@ -31,7 +31,7 @@ To write a new article, run:
 **What it does:**
 1. Prompts for a human-readable title.
 2. Formats the title into a web-safe lowercase URL (e.g., `my-new-post.md`).
-3. Generates the file using a custom TOML archetype (setting default tags, Table of Contents, reading time, etc.).
+3. Generates the file using a custom TOML archetype - `archetypes/default.md` (setting default tags, Table of Contents, reading time, etc.).
 4. Instantly opens the file in `nano` for writing.
 
 ### 2. Deploying to the Live Site
@@ -46,15 +46,15 @@ Once a post is written (and `draft = false` is set in the front matter), run:
 
 ---
 
-## 🎨 Customizations
+## Customizations
 
 * **Social Icons:** Configured in `hugo.toml` to display YouTube, Bluesky, and Instagram on the homepage.
 * **External Links:** A custom CSS rule (`assets/css/extended/custom.css`) was added to automatically color all external `http`/`https` links blue while keeping internal anchor links (like the Table of Contents) the default text color.
-* **Pinned Posts:** Posts can be pinned to the top of the homepage by adding `weight = 1` to the TOML front matter.
+* **Pinned Posts:** Posts can be pinned to the top of the homepage by adding `weight = 1` to the TOML front matter and adding 📌 Emoji to the title.
 
 ---
 
-## 🔄 Backup & Restore
+## Backup & Restore
 
 This repository contains the source code. It explicitly ignores the generated `public/` folder via `.gitignore`. 
 
