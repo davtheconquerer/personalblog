@@ -36,9 +36,5 @@ copyright = "© 2026 davcore. All Rights Reserved."
     url = "https://youtube.com/channel/UCMmZ9MAZBYYXqd2SH5k0f4A"
 
 [[params.socialIcons]]
-    name = "bluesky"
-    url = "https://bsky.app/profile/therealdavv.bsky.social"
-
-[[params.socialIcons]]
     name = "instagram"
     url = "https://instagram.com/the.real.davv"
