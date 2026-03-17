@@ -73,4 +73,4 @@ echo "✅ Done! Your portfolio site is up to date."
 
 Now, pushing a new project to my portfolio is as simple as running a `git push` on my laptop, and executing `./deploy.sh` on the Pi.
 
-The site is live and you can check it out here [porfolio.davcore.net](https://portfolio.davcore.net).
+The site is live and you can check it out here [portfolio.davcore.net](https://portfolio.davcore.net).
