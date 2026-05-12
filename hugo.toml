@@ -2,7 +2,7 @@ baseURL = 'https://blog.davcore.net/'
 languageCode = 'en-us'
 title = "Dav's Personal Blog"
 theme = 'PaperMod'
-copyright = "© 2026 davcore. All Rights Reserved."
+copyright = "© 2026 David Williams. All Rights Reserved."
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
